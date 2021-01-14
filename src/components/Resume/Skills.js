@@ -4,18 +4,25 @@ import PropTypes from 'prop-types';
 import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
-const handleProps = ({ categories, skills }) => ({
+const handleProps = ({ categories, skills, levels }) => ({
   buttons: categories.map((cat) => cat.name).reduce((obj, key) => ({
     ...obj,
     [key]: false,
   }), { All: true }),
   skills,
+  levels,
 });
 
 class Skills extends Component {
   constructor(props) {
     super(props);
-    this.state = handleProps({ categories: props.categories, skills: props.skills });
+    this.state = handleProps(
+      {
+        categories: props.categories,
+        skills: props.skills,
+        levels: props.levels,
+      },
+    );
   }
 
   getRows() {
@@ -73,9 +80,15 @@ class Skills extends Component {
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
-          <p>Note: I think these sections are silly, but everyone seems to have one.
-            Here is a *mostly* honest overview of my skills.
-          </p>
+          <h4>Note: I use the following definitions for &quot;skill&quot; ratings.</h4>
+          <ol className="skill-level-container">
+            {this.state.levels.map((level) => (
+              <li key={level.rating}>
+                <h5>{level.title}</h5>
+                <p><i>{level.description}</i></p>
+              </li>
+            ))}
+          </ol>
         </div>
         <div className="skill-button-container">
           {this.getButtons()}
@@ -98,11 +111,17 @@ Skills.propTypes = {
     name: PropTypes.string,
     color: PropTypes.string,
   })),
+  levels: PropTypes.arrayOf(PropTypes.shape({
+    level: PropTypes.number,
+    title: PropTypes.string,
+    description: PropTypes.string,
+  })),
 };
 
 Skills.defaultProps = {
   skills: [],
   categories: [],
+  levels: [],
 };
 
 export default Skills;

@@ -5,27 +5,25 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-    + 'co-founder and CTO of Arthena, and YC Alumni.'}
+    description={"My name is Derek Avery. I'm a Software Engineer located in Seattle, WA, and "
+    + 'I am dedicated to pursuing challenging work and solving interesting problems.'}
   >
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/">About this site</Link></h2>
+          <h2 data-testid="heading"><Link to="/">Site Information</Link></h2>
           <p>
-            A beautiful, responsive, statically-generated,
-            react application written with modern Javascript.
+            Derek Avery&apos;s personal website.
+            I will continue to add new content as I expand my professional portfolio,
+            so please check back again soon!
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
-        <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
+      <p> Thank you for visiting my website! Please feel free to learn more <Link to="/about">about me</Link>,
+        look at my <Link to="/resume">resume</Link>, {' '}
         or <Link to="/contact">contact</Link> me.
       </p>
-      <p> Source available <a href="https://github.com/mldangelo/personal-site">here</a>.</p>
+      <p> Source available <a href="https://github.com/averydl/personal-site">here.</a></p>
     </article>
   </Main>
 );

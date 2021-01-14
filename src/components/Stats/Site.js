@@ -9,9 +9,17 @@ const Stats = () => {
   const fetchData = useCallback(async () => {
     // request must be authenticated if private
     const res = await fetch(
-      'https://api.github.com/repos/mldangelo/personal-site',
+      'https://api.github.com/users/averydl',
+    );
+    const repoRes = await fetch(
+      'https://api.github.com/users/averydl/repos',
     );
     const resData = await res.json();
+    const repoData = await repoRes.json();
+    const languages = [...new Set(repoData.map(({ language }) => language))]
+      .filter((x) => x != null)
+      .join(', ');
+    resData.languageCount = languages;
     setResponseData(
       initialData.map((field) => ({
         ...field,
@@ -29,7 +37,7 @@ const Stats = () => {
 
   return (
     <div>
-      <h3>Some stats about this site</h3>
+      <h3>Some stats about my GitHub</h3>
       <Table data={data} />
     </div>
   );
