@@ -34,7 +34,7 @@ const Resume = () => (
               <h4 key={sec}>
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
-            <h4><a href="files/DerekAvery_Resume.pdf" download="DerekAvery_Resume.pdf" alt="Resume">[Download PDF]</a></h4>
+            <h4><a href="/files/DerekAvery_Resume.pdf" download="DerekAvery_Resume.pdf" alt="Resume">[Download PDF]</a></h4>
           </div>
         </div>
       </header>

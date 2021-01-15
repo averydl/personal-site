@@ -20,7 +20,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>My name is Derek Avery. I decided to pursue Software Engineering
-        because I love solving tricky problems and teaching myself new skills.
+        because I love solving challenging problems and teaching myself new skills.
         Please feel free to explore this site to find out more about me. Thank
         you for taking the time to visit!
       </p>

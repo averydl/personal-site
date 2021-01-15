@@ -53,7 +53,7 @@ const courses = [
     number: 'CS 481/2/3',
     link: 'http://bellevuecollege.edu/classes/All/CS/483',
     university: 'Bellevue College',
-    language: 'Python',
+    language: 'Python, React, TypeScript',
   },
   {
     title: 'Discrete Math',
@@ -65,14 +65,14 @@ const courses = [
   {
     title: 'Applied Computing',
     number: 'AMATH 301',
-    link: 'http://stat.uw.edu/academics/course-catalog/stat-390',
+    link: 'http://courses.washington.edu/am301/',
     university: 'University of Washington',
     language: 'MATLAB',
   },
   {
     title: 'Statistical Methods in Engineering & Science',
     number: 'STAT 390',
-    link: 'http://courses.washington.edu/am301/',
+    link: 'http://stat.uw.edu/academics/course-catalog/stat-390',
     university: 'University of Washington',
     language: 'R',
   },

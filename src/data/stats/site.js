@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
  */
 const data = [
   {
-    label: 'Public Repos:',
+    label: 'Public Repo\'s:',
     key: 'public_repos',
     link: 'https://github.com/averydl',
   },
@@ -19,13 +19,13 @@ const data = [
     key: 'following',
   },
   {
-    label: 'Last updated at',
+    label: 'Last Updated:',
     key: 'updated_at',
     format: (x) => dayjs(x).format('MMMM D, YYYY'),
   },
   {
     label: 'Languages:',
-    key: 'languageCount',
+    key: 'languages',
   },
 ];
 

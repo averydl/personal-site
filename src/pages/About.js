@@ -24,7 +24,7 @@ const About = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/about">About Me</Link></h2>
-          <p>(My life in {count} words)</p>
+          <p>My life in ~{count} words</p>
         </div>
       </header>
       <ReactMarkdown

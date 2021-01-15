@@ -19,7 +19,7 @@ const Stats = () => {
     const languages = [...new Set(repoData.map(({ language }) => language))]
       .filter((x) => x != null)
       .join(', ');
-    resData.languageCount = languages;
+    resData.languages = languages;
     setResponseData(
       initialData.map((field) => ({
         ...field,

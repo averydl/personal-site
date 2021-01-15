@@ -2,22 +2,22 @@ const levels = [
   {
     level: 1,
     title: 'No Experience',
-    description: 'Just a baseline number - nothing in this list has a "1" rating',
+    description: 'This is just a baseline - nothing in this list has a "1" rating',
   },
   {
     level: 2,
     title: 'Limited Exposure',
-    description: 'I have used it before, either briefly or in a very limited capacity',
+    description: 'I have used it before, either briefly or in a limited capacity',
   },
   {
     level: 3,
     title: 'Significant Exposure',
-    description: 'I have used academically or for a non-trivial project, but may not be familiar with more advanced features',
+    description: 'I have used it either academically or for a non-trivial project, but may not be familiar with more advanced features',
   },
   {
     level: 4,
     title: 'Proficiency',
-    description: 'I have used it daily for at least 6 months, either academically or for work/personal projects',
+    description: 'I have used it almost daily for at least 6 months, either academically or for work/personal projects',
   },
   {
     level: 5,
@@ -65,7 +65,7 @@ const skills = [
   {
     title: 'HTML/CSS/JavaScript',
     competency: 2,
-    category: ['Web Development'],
+    category: ['Web Development', 'Languages'],
   },
   {
     title: 'SQL',
