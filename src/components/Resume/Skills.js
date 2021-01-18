@@ -83,7 +83,7 @@ class Skills extends Component {
           <h4>Note: I use the following definitions for &quot;skill&quot; ratings.</h4>
           <ol className="skill-level-container">
             {this.state.levels.map((level) => (
-              <li key={level.rating}>
+              <li key={level.level}>
                 <h5>{level.title}</h5>
                 <p><i>{level.description}</i></p>
               </li>
