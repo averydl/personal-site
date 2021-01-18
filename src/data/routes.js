@@ -1,7 +1,8 @@
+// TODO: update when projects are added
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Derek Avery',
     path: '/',
   },
   {
@@ -11,10 +12,6 @@ const routes = [
   {
     label: 'Resume',
     path: '/resume',
-  },
-  {
-    label: 'Projects',
-    path: '/projects',
   },
   {
     label: 'Stats',

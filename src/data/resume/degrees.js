@@ -1,15 +1,27 @@
 const degrees = [
   {
-    school: 'Stanford University',
-    degree: 'M.S. Computational and Mathematical Engineering',
-    link: 'https://stanford.edu',
-    year: 2016,
+    school: 'Bellevue College',
+    degree: 'Bachelor of Science, Computer Science',
+    link: 'https://www.parchment.com/u/award/2e06dc260ea6df20550eec8f83375b44',
+    year: 2020,
   },
   {
-    school: 'University at Buffalo',
-    degree: 'B.S. Electrical Engineering, Computer Engineering',
-    link: 'https://buffalo.edu',
-    year: 2012,
+    school: 'University of Washington',
+    degree: 'Bachelor of Science in Civil Engineering',
+    link: 'https://washington.edu',
+    year: 2017,
+  },
+  {
+    school: 'University of Washington',
+    degree: 'Bachelor of Science, Chemistry',
+    link: 'https://washington.edu',
+    year: 2017,
+  },
+  {
+    school: 'University of Washington',
+    degree: 'Bachelor of Arts, Biochemistry',
+    link: 'https://washington.edu',
+    year: 2017,
   },
 ];
 
