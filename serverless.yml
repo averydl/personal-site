@@ -1,0 +1,77 @@
+service: personal-site
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-s3-sync
+
+provider:
+  name: aws
+  stage: dev
+  region: us-west-2
+  profile: default
+  runtime: nodejs12.x
+
+package:
+  exclude:
+    - ./**
+
+custom:
+  domain: averydl.com
+  zoneId: Z3BJ6K6RIION7M  # us-west-2
+  dnsAlias: s3-website-us-west-2.amazonaws.com
+  s3Sync:
+    # sync site build to s3 bucket for hosting
+    - bucketName: ${self:custom.domain}
+      localDir: build
+
+resources:
+  Resources:
+    # site bucket containing static averydl.com content
+    SiteBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: PublicRead
+        BucketName: ${self:custom.domain}
+        WebsiteConfiguration:
+          IndexDocument: index.html
+    # TODO: automate enabling of logging; currently need to manually enable logging in console
+    # bucket to store site access logs
+    SiteLogBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.domain}-logs
+    # averydl.com domain
+    PrimaryDnsRecord:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        AliasTarget:
+          DNSName: ${self:custom.dnsAlias}
+          HostedZoneId: ${self:custom.zoneId}
+        HostedZoneName: ${self:custom.domain}.
+        Name:
+          Ref: SiteBucket
+        Type: 'A'
+    # open read policy for averydl.com bucket
+    SiteBucketPolicy:
+      Type: AWS::S3::BucketPolicy
+      Properties:
+        Bucket:
+          Ref: SiteBucket
+        PolicyDocument:
+          Statement:
+            - Sid: PublicReadGetObject
+              Effect: Allow
+              Principal: "*"
+              Action:
+              - s3:GetObject
+              Resource:
+                Fn::Join: [
+                  "", [
+                    "arn:aws:s3:::",
+                    {
+                      "Ref": "SiteBucket"
+                    },
+                    "/*"
+                  ]
+                ]

@@ -36,6 +36,13 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# package directories
+ node_modules
+jspm_packages
+ 
+# Serverless directories
+.serverless
+
 # Webpack related
 public/dist/
 dist/
@@ -47,3 +54,5 @@ build/
 
 # Nohup
 nohup.out
+
+
