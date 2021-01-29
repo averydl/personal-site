@@ -23,7 +23,10 @@ const Index = () => (
         look at my <Link to="/resume">resume</Link>, {' '}
         or <Link to="/contact">contact</Link> me.
       </p>
-      <p> Source available <a href="https://github.com/averydl/personal-site">here.</a></p>
+      <p>
+        Site source code available <a href="https://github.com/averydl/personal-site">here. {' '}</a>
+        Deployment source code available <a href="https://github.com/averydl/aws-site-deploy">here.</a>
+      </p>
     </article>
   </Main>
 );

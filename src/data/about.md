@@ -17,11 +17,7 @@ My position at NBC focused on creating resilient data pipelines via AWS to inges
 
 - I have a Bachelor of Science in Computer Science from [Bellevue College](https://bellevuecollege.edu), where I studied from Sept. 2018 to June 2020.
 
-<br>
-
 - I have three degrees in Civil Engineering, Chemistry, and Biochemistry from the [University of Washington](https://washington.edu), where I studied from Sept. 2013 to June 2017.
-
-<br>
 
 As is probably clear from my four baccalaureate degrees, I had a hard time finding the right path for myself and deciding on a career. Although I diverged almost entirely from the areas of study I pursued at UW, I am thankful for the time I spent there. Studying a broad range of subjects helped provide me with clarity about my own interests and strengths, which ultimately helped guide me to the field of Software Engineering. And while my degrees from UW serve primarily as wall decorations, I still enjoy reading about new developments in Chemistry and Civil Engineering technology, and I believe my unusual academic background gives me a unique perspective when it comes to solving problems.
 
@@ -29,5 +25,5 @@ As is probably clear from my four baccalaureate degrees, I had a hard time findi
 
 - I started running in junior high, and completed my first marathon at age 15. While my marathon-running days are behind me, I still run almost every day.
 - Prior to COVID-19, I was getting involved with recreational boxing, and I am excited to return as soon as things open back up!
-- Traveling is one of my favorite things to do; before starting my coursework in Computer Science, I took a two-week trip to Mexico City. I am working on learning Spanish, and I hope to find the time to visit Mexico again soon to continue my progress.
+- Traveling is one of my favorite things to do. The day after quitting my Civil Engineering job (and before starting my Computer Science curriculum) I took an impromptu trip to Mexico City. I am working on learning Spanish, and I hope to find the time to visit Mexico again soon to continue my progress.
 - Caffeinating myself properly is a lifelong pursuit. Historically, I have used drip coffee makers, french press, and pour-overs and to accomplish this. More recently, I purchased a new espresso machine to do the job and so far it has been my favorite.

@@ -15,13 +15,13 @@ const positions = [
     company: 'NBCUniversal',
     position: 'Data Engineer (Contract)',
     link: 'https://www.nbcuniversal.com/',
-    daterange: 'May, 2020 - October, 2020',
+    daterange: 'May 2020 - October 2020',
     points: [
       'Implemented and maintained AWS application utilized by over 100 internal users: core functionality included '
       + 'generating audience segments for targeted notifications reaching >1M active mobile app users, '
       + 'sending real-time notifications to users when new content is published internally or by certain competitors, '
       + '& sending alerts to inform users when viewership of certain content exceeded a configurable threshold.',
-      'Developed and maintained ETL pipelines to ingest data from internal and external sources via AWS'
+      'Developed and maintained ETL pipelines to ingest data from internal and external sources via AWS and '
       + 'using software including Spark and Airflow.',
       'Implemented and automated queries at the request of internal stakeholders to obtain insights from ingested data.',
     ],
