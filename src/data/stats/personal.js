@@ -5,8 +5,8 @@ const Age = () => {
 
   const tick = () => {
     const divisor = 1000 * 60 * 60 * 24 * 365.25; // ms in an average year
-    const birthTime = new Date('1995-01-31T00:09:07');
-    setAge(((Date.now() - birthTime) / divisor).toFixed(8));
+    const birthTime = new Date('1995-01-31T17:07:00Z'); // birth date/time (UTC)
+    setAge(((new Date() - birthTime) / divisor).toFixed(9));
   };
 
   useEffect(() => {
