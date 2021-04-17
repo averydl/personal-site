@@ -15,15 +15,16 @@ const positions = [
     company: 'NBCUniversal',
     position: 'Data Engineer (Contract)',
     link: 'https://www.nbcuniversal.com/',
-    daterange: 'May, 2020 - October, 2020',
+    daterange: 'May 2020 - October 2020',
     points: [
       'Implemented and maintained AWS application utilized by over 100 internal users: core functionality included '
       + 'generating audience segments for targeted notifications reaching >1M active mobile app users, '
       + 'sending real-time notifications to users when new content is published internally or by certain competitors, '
-      + '& sending alerts to inform users when viewership of certain content exceeded a configurable threshold.',
-      'Developed and maintained ETL pipelines to ingest data from internal and external sources via AWS'
+      + 'and sending alerts to inform users when viewership of certain content exceeded a configurable threshold.',
+      'Developed and maintained ETL pipelines to ingest data from internal and external sources via AWS and '
       + 'using software including Spark and Airflow.',
-      'Implemented and automated queries at the request of internal stakeholders to obtain insights from ingested data.',
+      'Implemented configurable Airflow DAG to leverage AWS EC2 spot instances instead of on-demand instances, '
+      + 'reducing EC2 costs by over 50% for scheduled bulk data processing workloads.',
     ],
   },
   {
@@ -32,6 +33,7 @@ const positions = [
     link: 'https://www.nbcuniversal.com/',
     daterange: 'January 2020 - May 2020',
     points: [
+      'Designed and implemented an AWS cloud application used to send real-time notifications to internal users via the Slack API.',
       'Developed software in agile kanban team, participated in daily stand-up meetings, and used Git and Jira for version control/issue tracking.',
       'Implemented cloud-based software using AWS services including Lambda, SNS, DynamoDB, Athena, Glue, EMR, and S3.',
       'Documented project specifications and implementation details for team review and reference.',
